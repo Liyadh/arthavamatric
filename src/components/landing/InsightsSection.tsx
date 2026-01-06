@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
-import { NodeNetwork } from "@/components/icons/NodeNetwork";
+import { PiCyclicalTimeSeries } from "@/components/icons/PiCyclicalTimeSeries";
 
 const researchItems = [
   {
@@ -53,8 +53,8 @@ const researchItems = [
 export function InsightsSection() {
   return (
     <section id="insights" className="w-full py-12 md:py-16 relative overflow-hidden">
-       <div className="absolute inset-0 -z-10 opacity-5 pointer-events-none">
-        <NodeNetwork />
+       <div className="absolute inset-0 -z-10 opacity-70 pointer-events-none">
+        <PiCyclicalTimeSeries />
       </div>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
