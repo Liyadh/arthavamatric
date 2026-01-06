@@ -7,8 +7,11 @@ import { FibonacciCircularSpiral } from "../icons/FibonacciCircularSpiral";
 export function HeroSection() {
   return (
     <section className="relative w-full h-[90vh] min-h-[700px] flex items-center overflow-hidden">
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 flex items-center justify-center">
         <HeroWaves />
+        <div className="absolute inset-0 flex items-center justify-end mr-20">
+          <FibonacciCircularSpiral className="w-full h-full max-w-[500px] max-h-[500px]" />
+        </div>
       </div>
       <div className="container relative z-10 mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-8 items-center">
         <div className="flex flex-col items-start text-left gap-6">
@@ -35,7 +38,7 @@ export function HeroSection() {
           </div>
         </div>
         <div className="relative hidden md:flex items-center justify-center h-full">
-           <FibonacciCircularSpiral className="w-full h-full max-w-[500px] max-h-[500px]" />
+           {/* The spiral is now in the background */}
         </div>
       </div>
     </section>
