@@ -71,15 +71,15 @@ export function PiCyclicalTimeSeries(props: SVGProps<SVGSVGElement>) {
       <rect width="1440" height="810" fill="url(#pi-vignette)" />
 
       <g opacity="0.7">
-        <path d="M0 450 C 180 550, 540 350, 720 450 S 1260 550, 1440 450" stroke="#4f5155" strokeWidth="1" fill="none" strokeDasharray="2 3" />
-        <path d="M0 420 C 180 320, 540 520, 720 420 S 1260 320, 1440 420" stroke="url(#pi-wave-gradient-c)" strokeWidth="2" fill="none" opacity="0.6" />
+        <path d="M0 450 C 90 500, 180 400, 270 450 S 450 500, 540 450 S 720 400, 810 450 S 990 500, 1080 450 S 1260 400, 1350 450 S 1530 500, 1620 450" stroke="#4f5155" strokeWidth="1" fill="none" strokeDasharray="2 3" />
+        <path d="M0 420 C 90 370, 180 470, 270 420 S 450 370, 540 420 S 720 470, 810 420 S 990 370, 1080 420 S 1260 470, 1350 420 S 1530 370, 1620 420" stroke="url(#pi-wave-gradient-c)" strokeWidth="2" fill="none" opacity="0.6" />
       </g>
 
       <g filter="url(#pi-wave-glow)">
-        <path d="M0 400 C 180 250, 540 550, 720 400 S 1260 250, 1440 400" stroke="url(#pi-wave-gradient-a)" strokeWidth="4" fill="none" />
-        <path d="M0 380 C 120 580, 360 180, 480 380 S 840 580, 960 380 S 1320 180, 1440 380" stroke="url(#pi-wave-gradient-b)" strokeWidth="3" fill="none" opacity="0.7" />
-        <path d="M0 480 C 240 380, 480 580, 720 480 S 1200 380, 1440 480" stroke="url(#pi-wave-gradient-c)" strokeWidth="2.5" fill="none" opacity="0.5" />
-        <path d="M0 350 C 360 450, 1080 250, 1440 350" stroke="hsl(var(--primary))" strokeWidth="1.5" fill="none" opacity="0.4" />
+        <path d="M0 400 C 90 300, 180 500, 270 400 S 450 300, 540 400 S 720 500, 810 400 S 990 300, 1080 400 S 1260 500, 1350 400 S 1530 300, 1620 400" stroke="url(#pi-wave-gradient-a)" strokeWidth="4" fill="none" />
+        <path d="M0 380 C 60 480, 120 280, 180 380 S 300 480, 360 380 S 480 280, 540 380 S 660 480, 720 380 S 840 280, 900 380 S 1020 480, 1080 380 S 1200 280, 1260 380 S 1380 480, 1440 380 S 1560 280, 1620 380" stroke="url(#pi-wave-gradient-b)" strokeWidth="3" fill="none" opacity="0.7" />
+        <path d="M0 480 C 120 430, 240 530, 360 480 S 600 430, 720 480 S 960 530, 1080 480 S 1320 430, 1440 480 S 1680 530, 1800 480" stroke="url(#pi-wave-gradient-c)" strokeWidth="2.5" fill="none" opacity="0.5" />
+        <path d="M0 350 C 180 400, 360 300, 540 350 S 900 400, 1080 350 S 1440 400, 1620 350" stroke="hsl(var(--primary))" strokeWidth="1.5" fill="none" opacity="0.4" />
       </g>
 
       <g>
