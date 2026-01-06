@@ -27,7 +27,7 @@ export function HeroSection() {
               <Link href="#">View Performance</Link>
             </Button>
           </div>
-          <div className="flex flex-col sm:flex-row items-center justify-start gap-6 pt-8">
+          <div className="flex flex-col sm:flex-row items-center justify-start gap-4 pt-8">
             <MetricCard title="Golden Ratio" value="φ 1.618" />
             <MetricCard title="Market Models" value="∞" />
             <MetricCard title="Precision Factor" value="π²" />
@@ -42,11 +42,11 @@ function MetricCard({ title, value, icon }: { title: string; value: string; icon
   return (
     <div className="relative group animate-fade-in-up">
       <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-accent rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-      <Card className="relative bg-card/80 backdrop-blur-sm border-border/20 shadow-xl w-52">
-        <CardContent className="p-4 flex items-center justify-between">
-          <div className="flex flex-col text-center w-full">
-            <p className="text-sm text-muted-foreground">{title}</p>
-            <p className="text-2xl font-bold font-headline">{value}</p>
+      <Card className="relative bg-card/80 backdrop-blur-sm border-border/20 shadow-xl w-36">
+        <CardContent className="p-2 flex items-center justify-center">
+          <div className="flex flex-col text-center">
+            <p className="text-xs text-muted-foreground">{title}</p>
+            <p className="text-lg font-bold font-headline">{value}</p>
           </div>
           {icon && <div className="w-8 h-8">{icon}</div>}
         </CardContent>
