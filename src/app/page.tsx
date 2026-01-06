@@ -1,7 +1,7 @@
 import { Header } from "@/components/landing/Header";
 import { HeroSection } from "@/components/landing/HeroSection";
 import { WhyArthavaSection } from "@/components/landing/WhyArthavaSection";
-import { StrategySection } from "@/components/landing/StrategySection";
+import { InsightsSection } from "@/components/landing/InsightsSection";
 import { ResearchSection } from "@/components/landing/ResearchSection";
 import { WorkspacesSection } from "@/components/landing/WorkspacesSection";
 import { SecuritySection } from "@/components/landing/SecuritySection";
@@ -15,7 +15,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <WhyArthavaSection />
-        <StrategySection />
+        <InsightsSection />
         <ResearchSection />
         <WorkspacesSection />
         <SecuritySection />
