@@ -17,22 +17,19 @@ export function WhyArthavaSection() {
           <InformationDrivenPriceDynamics />
         </div>
       <div className="container mx-auto px-4 md:px-6 relative">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Our Quantitative Edge</h2>
-              <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Combining decades of mathematical research with cutting-edge technology to deliver consistent alpha generation in any market environment.
-              </p>
+        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Our Quantitative Edge</h2>
+          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
+            Combining decades of mathematical research with cutting-edge technology to deliver consistent alpha generation in any market environment.
+          </p>
+        </div>
+
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
+          {edgePoints.map((point) => (
+            <div key={point} className="flex items-center">
+              <span className="font-medium text-lg">{point}</span>
             </div>
-            <div className="flex justify-end">
-              <div className="flex flex-col gap-y-4">
-                {edgePoints.map((point) => (
-                  <div key={point} className="flex items-center gap-4">
-                    <span className="font-medium text-lg">{point}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+          ))}
         </div>
       </div>
     </section>
