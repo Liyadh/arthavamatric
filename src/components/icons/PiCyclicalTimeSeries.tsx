@@ -71,13 +71,15 @@ export function PiCyclicalTimeSeries(props: SVGProps<SVGSVGElement>) {
       <rect width="1440" height="810" fill="url(#pi-vignette)" />
 
       <g opacity="0.7">
-        <path d="M0 450 Q 360 400, 720 450 T 1440 450" stroke="#4f5155" strokeWidth="1" fill="none" strokeDasharray="2 3" />
-        <path d="M0 420 Q 180 480, 360 420 T 720 420 T 1080 420 T 1440 420" stroke="url(#pi-wave-gradient-c)" strokeWidth="2" fill="none" opacity="0.6" />
+        <path d="M0 450 C 180 550, 540 350, 720 450 S 1260 550, 1440 450" stroke="#4f5155" strokeWidth="1" fill="none" strokeDasharray="2 3" />
+        <path d="M0 420 C 180 320, 540 520, 720 420 S 1260 320, 1440 420" stroke="url(#pi-wave-gradient-c)" strokeWidth="2" fill="none" opacity="0.6" />
       </g>
 
       <g filter="url(#pi-wave-glow)">
-        <path d="M0 400 Q 360 300, 720 400 T 1440 400" stroke="url(#pi-wave-gradient-a)" strokeWidth="4" fill="none" />
-        <path d="M0 380 Q 240 500, 480 380 T 960 380 T 1440 380" stroke="url(#pi-wave-gradient-b)" strokeWidth="3" fill="none" opacity="0.7" />
+        <path d="M0 400 C 180 250, 540 550, 720 400 S 1260 250, 1440 400" stroke="url(#pi-wave-gradient-a)" strokeWidth="4" fill="none" />
+        <path d="M0 380 C 120 580, 360 180, 480 380 S 840 580, 960 380 S 1320 180, 1440 380" stroke="url(#pi-wave-gradient-b)" strokeWidth="3" fill="none" opacity="0.7" />
+        <path d="M0 480 C 240 380, 480 580, 720 480 S 1200 380, 1440 480" stroke="url(#pi-wave-gradient-c)" strokeWidth="2.5" fill="none" opacity="0.5" />
+        <path d="M0 350 C 360 450, 1080 250, 1440 350" stroke="hsl(var(--primary))" strokeWidth="1.5" fill="none" opacity="0.4" />
       </g>
 
       <g>
