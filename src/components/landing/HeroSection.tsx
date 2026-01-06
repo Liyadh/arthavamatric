@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { HeroWaves } from "@/components/icons/HeroWaves";
+import { FibonacciCircularSpiral } from "../icons/FibonacciCircularSpiral";
 
 export function HeroSection() {
   return (
@@ -9,7 +10,7 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <HeroWaves />
       </div>
-      <div className="container relative z-10 mx-auto px-4 md:px-6">
+      <div className="container relative z-10 mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-8 items-center">
         <div className="flex flex-col items-start text-left gap-6">
           <div className="flex flex-col items-start gap-4">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-glow">
@@ -33,6 +34,9 @@ export function HeroSection() {
             <MetricCard title="Precision Factor" value="π²" />
           </div>
         </div>
+        <div className="relative hidden md:flex items-center justify-center h-full">
+           <FibonacciCircularSpiral className="w-full h-full max-w-[500px] max-h-[500px]" />
+        </div>
       </div>
     </section>
   );
@@ -41,11 +45,11 @@ export function HeroSection() {
 function MetricCard({ title, value, icon }: { title: string; value: string; icon?: React.ReactNode }) {
   return (
     <div className="relative group animate-fade-in-up">
-      <Card className="relative bg-card/80 backdrop-blur-sm border-border/20 shadow-xl w-28">
+      <Card className="relative bg-card/80 backdrop-blur-sm border-border/20 shadow-xl w-24">
         <CardContent className="p-2 flex items-center justify-center">
           <div className="flex flex-col text-center">
-            <p className="text-xs text-muted-foreground">{title}</p>
-            <p className="text-base font-bold font-headline">{value}</p>
+            <p className="text-[10px] text-muted-foreground">{title}</p>
+            <p className="text-sm font-bold font-headline">{value}</p>
           </div>
           {icon && <div className="w-8 h-8">{icon}</div>}
         </CardContent>
