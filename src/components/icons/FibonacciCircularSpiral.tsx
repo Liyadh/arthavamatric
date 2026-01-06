@@ -24,10 +24,10 @@ export function FibonacciCircularSpiral(props: SVGProps<SVGSVGElement>) {
   }
 
   // A more controlled logarithmic spiral
-  const scale = 20;
-  const growth = 0.17;
+  const scale = 10;
+  const growth = 0.1;
   let spiralPath = "";
-  for (let i = 0; i < 500; i++) {
+  for (let i = 0; i < 1500; i++) {
       const angle = i * Math.PI / 180;
       const radius = scale * Math.exp(growth * angle);
       const x = 250 + radius * Math.cos(angle);
