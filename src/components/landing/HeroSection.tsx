@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { HeroWaves } from "@/components/icons/HeroWaves";
+import { FibonacciSpiral } from "@/components/icons/FibonacciSpiral";
 
 export function HeroSection() {
   return (
@@ -9,9 +10,9 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <HeroWaves />
       </div>
-      <div className="container relative z-10 mx-auto px-4 md:px-6">
-        <div className="flex flex-col items-start text-left gap-8">
-          <div className="flex flex-col items-start gap-6">
+      <div className="container relative z-10 mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+        <div className="flex flex-col items-start text-left gap-6">
+          <div className="flex flex-col items-start gap-4">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-glow">
               Where<br/>Mathematics<br/>Meets Markets
             </h1>
@@ -27,11 +28,14 @@ export function HeroSection() {
               <Link href="#">View Performance</Link>
             </Button>
           </div>
-          <div className="flex flex-col sm:flex-row items-center justify-start gap-4 pt-8">
+          <div className="flex flex-wrap gap-2 pt-4">
             <MetricCard title="Golden Ratio" value="φ 1.618" />
             <MetricCard title="Market Models" value="∞" />
             <MetricCard title="Precision Factor" value="π²" />
           </div>
+        </div>
+        <div className="hidden md:flex items-center justify-center relative w-full h-full">
+            <FibonacciSpiral className="w-full h-full max-w-[500px] max-h-[500px] text-primary/30" />
         </div>
       </div>
     </section>
@@ -41,12 +45,11 @@ export function HeroSection() {
 function MetricCard({ title, value, icon }: { title: string; value: string; icon?: React.ReactNode }) {
   return (
     <div className="relative group animate-fade-in-up">
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-accent rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-      <Card className="relative bg-card/80 backdrop-blur-sm border-border/20 shadow-xl w-36">
+      <Card className="relative bg-card/80 backdrop-blur-sm border-border/20 shadow-xl w-32">
         <CardContent className="p-2 flex items-center justify-center">
           <div className="flex flex-col text-center">
             <p className="text-xs text-muted-foreground">{title}</p>
-            <p className="text-lg font-bold font-headline">{value}</p>
+            <p className="text-base font-bold font-headline">{value}</p>
           </div>
           {icon && <div className="w-8 h-8">{icon}</div>}
         </CardContent>

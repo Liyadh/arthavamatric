@@ -75,8 +75,24 @@
   animation: wave-animation 20s ease-in-out infinite;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-slow {
+  animation: spin 60s linear infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .wave-animated {
+    animation: none;
+  }
+  .spin-slow {
     animation: none;
   }
 }
