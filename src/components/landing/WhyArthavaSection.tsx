@@ -10,7 +10,6 @@ export function WhyArthavaSection() {
           <FibonacciSpiral className="w-[400px] h-[400px] text-primary" />
         </div>
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-          <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Our Edge</div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Our Quantitative Edge</h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Combining decades of mathematical research with cutting-edge technology to deliver consistent alpha generation in any market environment.
