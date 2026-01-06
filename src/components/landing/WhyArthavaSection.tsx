@@ -27,11 +27,14 @@ export function WhyArthavaSection() {
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {edgePoints.map((point) => (
-             <Card key={point} className="bg-card/60 backdrop-blur-sm border-white/10 hover:bg-card/80 transition-colors">
-              <CardContent className="p-6 flex items-center justify-center h-full">
-                <span className="font-medium text-center text-lg">{point}</span>
-              </CardContent>
-            </Card>
+            <div key={point} className="relative group">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-accent rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+              <Card className="relative bg-card/60 backdrop-blur-sm border-white/10 hover:bg-card/80 transition-colors h-full">
+                <CardContent className="p-6 flex items-center justify-center h-full">
+                  <span className="font-medium text-center text-lg">{point}</span>
+                </CardContent>
+              </Card>
+            </div>
           ))}
         </div>
       </div>
