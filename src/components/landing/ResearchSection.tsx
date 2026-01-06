@@ -12,7 +12,7 @@ const reports = [
 
 export function ResearchSection() {
   return (
-    <section id="research" className="w-full py-24 md:py-32 bg-card relative overflow-hidden">
+    <section id="research" className="w-full py-16 md:py-24 bg-card relative overflow-hidden">
       <div className="absolute inset-0 -z-10 opacity-[0.02] pointer-events-none">
         <NodeNetwork />
       </div>

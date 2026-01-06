@@ -12,7 +12,7 @@ const strategies = [
 
 export function StrategySection() {
   return (
-    <section id="strategies" className="w-full py-24 md:py-32 relative overflow-hidden">
+    <section id="strategies" className="w-full py-16 md:py-24 relative overflow-hidden">
       <div className="absolute inset-0 -z-10 opacity-5 pointer-events-none">
         <CandlestickChart />
       </div>

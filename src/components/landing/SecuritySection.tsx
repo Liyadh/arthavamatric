@@ -26,7 +26,7 @@ const securityFeatures = [
 
 export function SecuritySection() {
   return (
-    <section id="security" className="w-full py-24 md:py-32 bg-card">
+    <section id="security" className="w-full py-16 md:py-24 bg-card">
        <div className="absolute top-0 left-0 right-0 opacity-10">
         <SectionDividerWave />
       </div>

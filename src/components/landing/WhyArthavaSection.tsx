@@ -4,7 +4,7 @@ import { FibonacciSpiral } from "@/components/icons/FibonacciSpiral";
 
 export function WhyArthavaSection() {
   return (
-    <section id="edge" className="w-full py-24 md:py-32 bg-card">
+    <section id="edge" className="w-full py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4 md:px-6 relative">
         <div className="absolute top-0 right-0 -mr-32 -mt-20 opacity-5 pointer-events-none">
           <FibonacciSpiral className="w-[400px] h-[400px] text-primary" />
