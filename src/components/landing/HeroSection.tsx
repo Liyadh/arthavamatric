@@ -7,7 +7,7 @@ import { FibonacciCircularSpiral } from "../icons/FibonacciCircularSpiral";
 export function HeroSection() {
   return (
     <section className="relative w-full h-[90vh] min-h-[700px] flex items-center overflow-hidden">
-      <div className="absolute inset-0 z-0 flex items-center justify-center">
+      <div className="absolute inset-0 z-0">
         <HeroWaves />
         <div className="absolute inset-0 flex items-center justify-end mr-20">
           <FibonacciCircularSpiral className="w-full h-full max-w-[500px] max-h-[500px]" />
@@ -48,11 +48,11 @@ export function HeroSection() {
 function MetricCard({ title, value, icon }: { title: string; value: string; icon?: React.ReactNode }) {
   return (
     <div className="relative group animate-fade-in-up">
-      <Card className="relative bg-card/80 backdrop-blur-sm border-border/20 shadow-xl w-24">
-        <CardContent className="p-2 flex items-center justify-center">
+      <Card className="relative bg-card/80 backdrop-blur-sm border-border/20 shadow-xl w-20">
+        <CardContent className="p-1 flex items-center justify-center">
           <div className="flex flex-col text-center">
             <p className="text-[10px] text-muted-foreground">{title}</p>
-            <p className="text-sm font-bold font-headline">{value}</p>
+            <p className="text-xs font-bold font-headline">{value}</p>
           </div>
           {icon && <div className="w-8 h-8">{icon}</div>}
         </CardContent>
