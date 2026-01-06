@@ -1,6 +1,16 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, XCircle } from "lucide-react";
+import { CheckCircle, Atom } from "lucide-react";
 import { InformationDrivenPriceDynamics } from "@/components/icons/InformationDrivenPriceDynamics";
+
+const edgePoints = [
+  "Information-Driven Price Dynamics",
+  "Wave-Based Market Modeling",
+  "Machine Learning Signal Propagation",
+  "Fibonacci-Inspired Market Structure",
+  "Pi-Cyclical Time-Series Analysis",
+  "Nonlinear Quantitative Price Discovery",
+];
+
 
 export function WhyArthavaSection() {
   return (
@@ -15,71 +25,17 @@ export function WhyArthavaSection() {
             Combining decades of mathematical research with cutting-edge technology to deliver consistent alpha generation in any market environment.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-8">
-          <ProblemCard />
-          <SolutionCard />
+        <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+              {edgePoints.map((point) => (
+                <div key={point} className="flex items-center gap-4">
+                  <Atom className="h-6 w-6 text-primary shrink-0" />
+                  <span className="font-medium">{point}</span>
+                </div>
+              ))}
+            </div>
         </div>
       </div>
     </section>
-  );
-}
-
-const problemPoints = [
-  "Fragmented tools and data sources",
-  "Slow strategy evaluation cycles",
-  "Static, non-interactive PDF reports",
-  "Lack of centralized research repository",
-];
-
-const solutionPoints = [
-  "Central strategy and research catalogue",
-  "Institutional-grade analytics engine",
-  "Dynamic, interactive reporting",
-  "Client-specific workspaces and permissions",
-];
-
-function ProblemCard() {
-  return (
-    <Card className="bg-background/50">
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2 font-headline">
-          <XCircle className="text-destructive h-8 w-8" />
-          The Old Way: The Problem
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        <ul className="space-y-4">
-          {problemPoints.map((point) => (
-            <li key={point} className="flex items-start gap-4">
-              <XCircle className="h-5 w-5 mt-1 text-destructive/50 shrink-0" />
-              <span className="text-muted-foreground">{point}</span>
-            </li>
-          ))}
-        </ul>
-      </CardContent>
-    </Card>
-  );
-}
-
-function SolutionCard() {
-  return (
-    <Card className="border-primary/50 bg-gradient-to-br from-card to-background">
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2 font-headline">
-          <CheckCircle className="text-success h-8 w-8" />
-          The New Way: The Solution
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        <ul className="space-y-4">
-          {solutionPoints.map((point) => (
-            <li key={point} className="flex items-start gap-4">
-              <CheckCircle className="h-5 w-5 mt-1 text-success shrink-0" />
-              <span>{point}</span>
-            </li>
-          ))}
-        </ul>
-      </CardContent>
-    </Card>
   );
 }
