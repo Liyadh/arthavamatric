@@ -27,7 +27,7 @@ export function FibonacciCircularSpiral(props: SVGProps<SVGSVGElement>) {
   const scale = 10;
   const growth = 0.1;
   let spiralPath = "";
-  for (let i = 0; i < 1500; i++) {
+  for (let i = 0; i < 3000; i++) {
       const angle = i * Math.PI / 180;
       const radius = scale * Math.exp(growth * angle);
       const x = 250 + radius * Math.cos(angle);
