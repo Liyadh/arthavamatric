@@ -4,16 +4,16 @@ import { FibonacciSpiral } from "@/components/icons/FibonacciSpiral";
 
 export function WhyArthavaSection() {
   return (
-    <section id="platform" className="w-full py-24 md:py-32 bg-card">
+    <section id="edge" className="w-full py-24 md:py-32 bg-card">
       <div className="container mx-auto px-4 md:px-6 relative">
         <div className="absolute top-0 right-0 -mr-32 -mt-20 opacity-5 pointer-events-none">
           <FibonacciSpiral className="w-[400px] h-[400px] text-primary" />
         </div>
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-          <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Why Arthava Matric</div>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">From fragmented tools to a unified powerhouse.</h2>
+          <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Our Edge</div>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Our Quantitative Edge</h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            We replace scattered spreadsheets, static PDFs, and disjointed systems with a central, dynamic platform for institutional-grade quantitative analysis.
+            Combining decades of mathematical research with cutting-edge technology to deliver consistent alpha generation in any market environment.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">

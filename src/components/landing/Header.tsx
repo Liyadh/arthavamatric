@@ -3,7 +3,7 @@ import { MountainIcon } from "lucide-react";
 
 export function Header() {
   const navLinks = [
-    { href: "#platform", label: "Platform" },
+    { href: "#edge", label: "Our Edge" },
     { href: "#strategies", label: "Strategies" },
     { href: "#research", label: "Research" },
     { href: "#clients", label: "Clients" },
