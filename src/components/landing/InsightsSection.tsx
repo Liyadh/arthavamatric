@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
+import { NodeNetwork } from "@/components/icons/NodeNetwork";
 
 const researchItems = [
   {
@@ -51,7 +52,10 @@ const researchItems = [
 
 export function InsightsSection() {
   return (
-    <section id="insights" className="w-full py-12 md:py-16">
+    <section id="insights" className="w-full py-12 md:py-16 bg-card relative overflow-hidden">
+       <div className="absolute inset-0 -z-10 opacity-[0.02] pointer-events-none">
+        <NodeNetwork />
+      </div>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Insights</h2>
@@ -62,7 +66,7 @@ export function InsightsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {researchItems.map((item) => (
-            <Card key={item.id} className="bg-card/80 backdrop-blur-sm flex flex-col">
+            <Card key={item.id} className="bg-background/50 hover:bg-background transition-colors flex flex-col">
               <CardHeader>
                 <CardTitle>{item.title}</CardTitle>
               </CardHeader>
