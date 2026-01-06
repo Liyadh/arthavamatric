@@ -1,4 +1,3 @@
-import { Atom } from "lucide-react";
 import { InformationDrivenPriceDynamics } from "@/components/icons/InformationDrivenPriceDynamics";
 
 const edgePoints = [
