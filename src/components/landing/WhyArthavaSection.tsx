@@ -4,8 +4,8 @@ import { InformationDrivenPriceDynamics } from "@/components/icons/InformationDr
 
 export function WhyArthavaSection() {
   return (
-    <section id="edge" className="w-full py-16 md:py-20 bg-card relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10 pointer-events-none">
+    <section id="edge" className="w-full py-12 md:py-16 bg-card relative overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none">
           <InformationDrivenPriceDynamics />
         </div>
       <div className="container mx-auto px-4 md:px-6 relative">
