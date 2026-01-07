@@ -2,7 +2,6 @@ import { Header } from "@/components/landing/Header";
 import { HeroSection } from "@/components/landing/HeroSection";
 import { WhyArthavaSection } from "@/components/landing/WhyArthavaSection";
 import { InsightsSection } from "@/components/landing/InsightsSection";
-import { ResearchSection } from "@/components/landing/ResearchSection";
 import { WorkspacesSection } from "@/components/landing/WorkspacesSection";
 import { SecuritySection } from "@/components/landing/SecuritySection";
 import { ContactSection } from "@/components/landing/ContactSection";
@@ -16,7 +15,6 @@ export default function Home() {
         <HeroSection />
         <WhyArthavaSection />
         <InsightsSection />
-        <ResearchSection />
         <WorkspacesSection />
         <SecuritySection />
         <ContactSection />
