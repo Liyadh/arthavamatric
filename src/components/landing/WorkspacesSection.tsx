@@ -7,7 +7,7 @@ import { List, FileText } from "lucide-react";
 export function WorkspacesSection() {
   return (
     <section id="clients" className="w-full py-16 md:py-24 relative overflow-hidden">
-      <div className="absolute bottom-0 right-0 -mb-40 -mr-40 opacity-20 pointer-events-none">
+      <div className="absolute bottom-0 left-0 -mb-40 -ml-40 opacity-50 pointer-events-none">
           <PiWave className="w-[800px] h-[800px] text-accent" />
       </div>
       <div className="container mx-auto px-4 md:px-6">
