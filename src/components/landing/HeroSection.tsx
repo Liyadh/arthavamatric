@@ -9,8 +9,8 @@ export function HeroSection() {
     <section className="relative w-full h-[90vh] min-h-[700px] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <HeroWaves />
+        <FibonacciCircularSpiral className="absolute top-1/2 right-0 -translate-y-1/2 w-full h-full max-w-[500px] max-h-[500px] mr-20" />
       </div>
-      <FibonacciCircularSpiral className="absolute top-1/2 right-0 -translate-y-1/2 w-full h-full max-w-[500px] max-h-[500px] mr-20 z-0" />
 
       <div className="container relative z-10 mx-auto px-4 md:px-6">
         <div className="flex flex-col items-start text-left gap-6 max-w-[600px]">
