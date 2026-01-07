@@ -11,6 +11,7 @@ export function HeroSection() {
         <HeroWaves />
         <FibonacciCircularSpiral className="absolute top-1/2 right-0 -translate-y-1/2 w-full h-full max-w-[500px] max-h-[500px] mr-20" />
       </div>
+
       <div className="container relative z-10 mx-auto px-4 md:px-6">
         <div className="flex flex-col items-start text-left gap-6 max-w-[600px]">
           <div className="flex flex-col items-start gap-4">
