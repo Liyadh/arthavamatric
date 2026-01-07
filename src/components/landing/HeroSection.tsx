@@ -44,11 +44,11 @@ export function HeroSection() {
 function MetricCard({ title, value, icon }: { title: string; value: string; icon?: React.ReactNode }) {
   return (
     <div className="relative group animate-fade-in-up">
-      <Card className="relative bg-card/80 backdrop-blur-sm border-border/20 shadow-xl w-24 h-20">
+      <Card className="relative bg-card/80 backdrop-blur-sm border-border/20 shadow-xl w-32 h-24">
         <CardContent className="p-2 flex items-center justify-center h-full">
           <div className="flex flex-col text-center">
             <p className="text-xs text-muted-foreground">{title}</p>
-            <p className="text-sm font-bold font-headline">{value}</p>
+            <p className="text-lg font-bold font-headline">{value}</p>
           </div>
           {icon && <div className="w-8 h-8">{icon}</div>}
         </CardContent>
