@@ -3,8 +3,8 @@ import type { SVGProps } from "react";
 export function PiWave(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      width="200"
-      height="200"
+      width="400"
+      height="400"
       viewBox="0 0 200 200"
       fill="none"
       {...props}
@@ -27,9 +27,10 @@ export function PiWave(props: SVGProps<SVGSVGElement>) {
         y="115"
         fontFamily="Space Grotesk, sans-serif"
         fontSize="100"
-        fill="currentColor"
+        fill="url(#piWaveGradient)"
         textAnchor="middle"
         opacity="0.5"
+        filter="url(#pi-glow)"
       >
         π
       </text>
