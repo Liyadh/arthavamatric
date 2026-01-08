@@ -1,16 +1,16 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { PiWave } from "@/components/icons/PiWave";
 import { List, FileText } from "lucide-react";
+import { NonlinearQuantitativePriceDiscovery } from "../icons/NonlinearQuantitativePriceDiscovery";
 
 export function WorkspacesSection() {
   return (
     <section id="clients" className="w-full py-16 md:py-24 relative overflow-hidden">
-      <div className="absolute bottom-0 left-0 -mb-40 -ml-40 opacity-50 pointer-events-none">
-          <PiWave className="w-[800px] h-[800px] text-accent" />
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+          <NonlinearQuantitativePriceDiscovery />
       </div>
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Client Workspaces</div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Client-specific workspaces, watchlists, and exports.</h2>
