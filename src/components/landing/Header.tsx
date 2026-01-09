@@ -5,7 +5,6 @@ export function Header() {
   const navLinks = [
     { href: "#edge", label: "Our Edge" },
     { href: "#insights", label: "Insights" },
-    { href: "#research", label: "Research" },
     { href: "#clients", label: "Clients" },
     { href: "#security", label: "Security" },
     { href: "#contact", label: "Contact" },
