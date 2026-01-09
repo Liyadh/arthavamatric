@@ -32,8 +32,11 @@ export function ContactSection() {
               ))}
             </ul>
           </div>
-          <div className="w-full">
-            <ContactForm />
+          <div className="relative group">
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-accent rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+            <div className="relative">
+              <ContactForm />
+            </div>
           </div>
         </div>
       </div>
