@@ -26,7 +26,7 @@ export function WorkspacesSection() {
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <NonlinearQuantitativePriceDiscovery />
       </div>
-       <PiWave className="absolute bottom-0 left-0 w-[600px] h-[600px] opacity-30 -z-10 text-primary" />
+       <PiWave className="absolute bottom-0 left-0 w-[800px] h-[800px] opacity-50 -z-10 text-primary" />
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Our Approach</div>
@@ -51,8 +51,9 @@ export function WorkspacesSection() {
           <div className="flex flex-col gap-4">
             {metrics.map((metric) => (
                  <Card key={metric} className="bg-card/80 backdrop-blur-sm">
-                    <CardContent className="p-4">
-                        <h4 className="text-center font-semibold text-lg">{metric}</h4>
+                    <CardContent className="p-4 flex flex-col text-center">
+                        <span className="text-muted-foreground">----</span>
+                        <h4 className="font-semibold text-lg">{metric}</h4>
                     </CardContent>
                  </Card>
             ))}
