@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { ContactForm } from "./ContactForm";
 
 const features = [
   "Access to proprietary quantitative models",
@@ -32,21 +33,7 @@ export function ContactSection() {
             </ul>
           </div>
           <div className="w-full">
-            <Card className="bg-card/80 backdrop-blur-sm text-center">
-              <CardHeader>
-                <CardTitle className="font-headline flex items-center justify-center">
-                  <Badge>Application Required</Badge>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground">
-                  By invitation and qualification only
-                </p>
-                <Button asChild size="lg" className="w-full">
-                  <Link href="#contact">Apply Now</Link>
-                </Button>
-              </CardContent>
-            </Card>
+            <ContactForm />
           </div>
         </div>
       </div>
