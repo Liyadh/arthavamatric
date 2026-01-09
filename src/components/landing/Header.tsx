@@ -6,7 +6,7 @@ export function Header() {
     { href: "#edge", label: "Our Edge" },
     { href: "#insights", label: "Insights" },
     { href: "#clients", label: "Clients" },
-    { href: "#contact", label: "Contact" },
+    { href: "#join-us", label: "Join Us" },
   ];
 
   return (
