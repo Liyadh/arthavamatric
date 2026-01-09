@@ -3,7 +3,6 @@ import { HeroSection } from "@/components/landing/HeroSection";
 import { WhyArthavaSection } from "@/components/landing/WhyArthavaSection";
 import { InsightsSection } from "@/components/landing/InsightsSection";
 import { WorkspacesSection } from "@/components/landing/WorkspacesSection";
-import { SecuritySection } from "@/components/landing/SecuritySection";
 import { ContactSection } from "@/components/landing/ContactSection";
 import { Footer } from "@/components/landing/Footer";
 
@@ -16,7 +15,6 @@ export default function Home() {
         <WhyArthavaSection />
         <InsightsSection />
         <WorkspacesSection />
-        <SecuritySection />
         <ContactSection />
       </main>
       <Footer />
