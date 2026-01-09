@@ -33,7 +33,7 @@ function SubmitButton() {
   const { pending } = useFormStatus();
   return (
     <Button type="submit" className="w-full" disabled={pending}>
-      {pending ? "Submitting..." : "Request a Demo"}
+      {pending ? "Submitting..." : "Submit"}
     </Button>
   );
 }
@@ -66,7 +66,7 @@ export function ContactForm() {
   return (
     <Card className="bg-card/80 backdrop-blur-sm">
       <CardHeader>
-        <CardTitle className="font-headline">Get in Touch</CardTitle>
+        <CardTitle className="font-headline">Join with us</CardTitle>
       </CardHeader>
       <CardContent>
         <form action={formAction} className="space-y-4">
