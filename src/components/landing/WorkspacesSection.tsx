@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 import { NonlinearQuantitativePriceDiscovery } from "../icons/NonlinearQuantitativePriceDiscovery";
 import { PiWave } from "../icons/PiWave";
@@ -48,14 +48,17 @@ export function WorkspacesSection() {
                     </div>
                 ))}
             </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 max-w-sm ml-auto w-full">
             {metrics.map((metric) => (
-                 <Card key={metric} className="bg-card/80 backdrop-blur-sm">
-                    <CardContent className="p-4 flex flex-col text-center">
-                        <span className="text-muted-foreground">----</span>
-                        <h4 className="font-semibold text-lg">{metric}</h4>
-                    </CardContent>
-                 </Card>
+                 <div key={metric} className="relative group">
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-accent rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                    <Card className="relative bg-card/80 backdrop-blur-sm">
+                        <CardContent className="p-4 flex flex-col text-center">
+                            <span className="text-muted-foreground">----</span>
+                            <h4 className="font-semibold text-lg">{metric}</h4>
+                        </CardContent>
+                    </Card>
+                 </div>
             ))}
           </div>
         </div>
