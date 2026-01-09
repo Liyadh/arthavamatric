@@ -21,13 +21,6 @@ const researchItems = [
     pdfUrl: '/pdf/volatility-regimes.pdf',
   },
   {
-    id: 'quantum-computing',
-    title: 'Quantum Computing in Portfolio Optimization',
-    description: 'Leveraging quantum algorithms for efficient portfolio construction and risk analysis.',
-    tags: ['Quantum Computing', 'Portfolio Theory', 'Optimization'],
-    pdfUrl: '/pdf/quantum-computing.pdf',
-  },
-  {
     id: 'sentiment-analysis',
     title: 'Sentiment Analysis for Market Prediction',
     description: 'NLP techniques to extract alpha from alternative data sources and news sentiment.',
@@ -40,13 +33,6 @@ const researchItems = [
     description: 'Microstructure analysis and execution algorithms for high-frequency trading environments.',
     tags: ['HFT', 'Market Microstructure', 'Execution'],
     pdfUrl: '/pdf/hft-strategies.pdf',
-  },
-  {
-    id: 'rl-options',
-    title: 'Reinforcement Learning for Options Pricing',
-    description: 'Novel approaches to options pricing and hedging using deep reinforcement learning.',
-    tags: ['Reinforcement Learning', 'Options', 'Derivatives'],
-    pdfUrl: '/pdf/rl-options.pdf',
   },
 ];
 
